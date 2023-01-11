@@ -32,7 +32,6 @@
 
 /*  m765px*/
 
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -47,7 +46,6 @@
   justify-content: center;
 }
 
-
 .postcards {
   width: 30vw;
 }
@@ -58,7 +56,6 @@
 }
 
 @media screen and (max-width: 765px) {
-
   .postcards {
     width: 100vw;
   }
@@ -66,55 +63,62 @@
   #map {
     display: none;
   }
-  
 }
 
 .homeStyle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 9px; }
+  padding: 9px;
+}
 
 .addPostStyle {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   align-items: stretch;
-  padding: 9px; }
+  padding: 9px;
+}
 
-.cloudinary-button{
+.cloudinary-button {
   background-color: #ff9f1c;
   color: #ffffff;
-  padding: 3px 3px; }
+  padding: 3px 3px;
+}
 
-.cloudinary-button:hover{
-  background-color: #FFBF69;
-  color: black; }
+.cloudinary-button:hover {
+  background-color: #ffbf69;
+  color: black;
+}
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
   background-color: #126782;
-  background-image: linear-gradient(to right,#126782, #219EBC); }
+  background-image: linear-gradient(to right, #126782, #219ebc);
+}
 
 .css-1q39md6-MuiButtonBase-root-MuiButton-root:hover {
-  color: #FF9F1C; }
+  color: #ff9f1c;
+}
 
 .commentButton {
   color: #ffffff;
-  background-color: #FF9F1C;
+  background-color: #ff9f1c;
   display: inline-block;
   border-radius: 4px;
   font-size: 14px;
   line-height: 24px;
   border: 2px outset dimgray;
-  padding: 5px; }
+  padding: 5px;
+}
 
 .css-sghohy-MuiButtonBase-root-MuiButton-root {
-background-color: #ff9f1c;
-color: #ffffff;
-padding: 3px 3px; }
+  background-color: #ff9f1c;
+  color: #ffffff;
+  padding: 3px 3px;
+}
 
 .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
-  background-color: #FFBF69;
+  background-color: #ffbf69;
   color: black;
 }
 
