@@ -46,9 +46,9 @@ function App() {
   }, []);
 
 
-  if (!token)  {
-    return <Login setLoggedIn={setLoggedIn} />
-  }
+  // if (!token)  {
+  //   return <Login setLoggedIn={setLoggedIn} />
+  // }
 
   return (
     <div className="App">
