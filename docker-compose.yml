@@ -2,16 +2,18 @@ version: '3.8'
 
 services:
   db:
+    env_file: ./.env
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: ftchr_db
+      MYSQL_ROOT_PASSWORD: $MYSQLDB_ROOT_PASSWORD
+      MYSQL_DATABASE: $MYSQLDB_DATABASE
     ports:
       - "3307:3306"
     volumes:
       - db-data:/var/lib/mysql
 
   api:
+    env_file: ./.env
     build: ./backend
     container_name: ftchr_api_c
     ports:
@@ -23,9 +25,9 @@ services:
       - db
     environment:
       DB_HOST: db
-      DB_USER: root
-      DB_PASSWORD: password
-      DB_DATABASE: password
+      DB_USER: $MYSQLDB_USER
+      DB_PASSWORD: $MYSQLDB_ROOT_PASSWORD
+      DB_NAME: $MYSQLDB_DATABASE
 
 volumes:
   db-data:
