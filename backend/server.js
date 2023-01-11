@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const controllers = require("./controllers");
 const sequelize = require("./config/configuration");
@@ -6,9 +7,9 @@ const cors = require('cors');
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.NODE_PORT || 3001;
 
-// app.use(cors())
+app.use(cors())
 
 app.use((req, res, next) => {
   const allowedOrigins = ['http://localhost:3000', 'https://ftchr.netlify.app'];
